@@ -117,6 +117,8 @@ html{
     font-size: 1.6rem;
     font-weight: 400;
     border: none;
+    text-decoration: none;
+    text-align: center;
 }
 
 .botones:first-child{
@@ -147,52 +149,7 @@ html{
     color: var(--azul);
 }
 
-/* FORMULARIO DERECHA */
-/* .formulario__encriptador-derecha{
-    margin: 3rem 1rem 2rem 1rem;
-}
 
-.formulario__derecha{
-    resize: none;
-    border: none;
-    outline: none;
-    border-radius: 3rem;
-    width: 100%;
-    height: 20rem;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.10);
-}
-@media (min-width: 768px) { 
-    .formulario__encriptador-derecha{
-        margin: 6rem 1rem 0 1rem;
-    }
-    .formulario__derecha{
-        height: 15rem;
-    }
-}
-@media (min-width: 1024px) {
-    .formulario__encriptador-derecha{
-        margin: 0rem 2rem;
-        padding: 0 1rem;
-    }
-
-    .formulario__derecha{
-        height: 80rem;
-        position: relative;
-        top: -80px;
-    }
-}
-@media (min-width: 1368px) {
-    .formulario__encriptador-derecha{
-        margin: 0rem 6rem 0rem 2rem;
-        padding: 0 3rem;
-        
-    }
-
-    .formulario__derecha{
-        height: 65rem;
-        width: 30rem;
-    }
-} */
 .formulario__encriptador-derecha{
     background: var(--blanco);
     margin: 4rem 1rem 2rem 1rem;
@@ -211,7 +168,8 @@ html{
         width: 35rem;
         position: relative;
         top: -80px;
-        padding: 7rem 1rem 1rem 1rem;
+        padding: 7rem 1rem 2rem 1rem;
+        margin-bottom: 0rem;
     }
     
 }
@@ -220,8 +178,8 @@ html{
         height: 100%;
         position: relative;
         top: -105px;
-        padding: 1rem;
         padding: 3rem 1rem 1rem 1rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -237,11 +195,11 @@ html{
 .formulario__info{
     padding-top: 2rem;
 }
-/* @media (min-width: 1024px) { 
+@media (min-width: 1024px) { 
     .formulario__info{
         margin: 2rem;
     }
-} */
+}
 
 .formulario__h3{
     font-size: 2.4rem;
@@ -256,4 +214,31 @@ html{
     font-size: 1.6rem;
     text-align: center;
     color: var(--grisclaro);
+}
+.formulario__lleno{
+    padding: 2rem;
+    margin: 0 auto;
+}
+.textarea2{
+    display: none;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 2.4rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--grisclaro);
+    margin: 0 auto;
+}
+@media (min-width: 1024px) { 
+    .textarea2{
+        width: 100%;
+        height: 45rem;
+    }
+}
+.btn3{
+    display: none;
+    width: 80%;
+    color: var(--azul);
+    border: 1px solid var(--azul);
+    margin: 0 auto;
 }

@@ -31,8 +31,8 @@
             </div>
 
             <div class="formulario__botones">
-                <button onclick="encriptarTexto();" class="botones btn1">Encriptar</button>
-                <button class="botones btn2">Desencriptar</button>
+                <a onclick="encriptarTexto();" class="botones btn1" href="#">Encriptar</a>
+                <a onclick="desencriptarTexto();" class="botones btn2" href="#">Desecnriptar</a>
             </div>
 
         </div>
@@ -46,11 +46,11 @@
                     </div>
                 </div>
                 <div class="formulario__lleno">
-                    <p id="texto2" class="formulario__final"></p>
+                    <textarea class="textarea2" id="texto2"></textarea>
+                    <a onclick="copiar();" id="btnMostrar" class="botones btn3" href="#">Copiar</a>
                 </div>
             </div>
         </div>
-
     </form>
     
     <script src="js/javascript.js"></script>
