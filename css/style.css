@@ -4,6 +4,7 @@
     --azul:#0A3871;
     --grisoscuro: #343A40;
     --grisclaro: #495057;
+    --rojo: #ff0000;
 
     --fuentePrincipal: 'inter', sans-serif;
 }
@@ -241,4 +242,12 @@ html{
     color: var(--azul);
     border: 1px solid var(--azul);
     margin: 0 auto;
+}
+.Restriccion{
+    display: none;
+    color: var(--blanco);
+    background: var(--rojo);
+    margin: none;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
