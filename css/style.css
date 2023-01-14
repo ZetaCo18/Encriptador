@@ -247,7 +247,7 @@ html{
     display: none;
     color: var(--blanco);
     background: var(--rojo);
-    margin: none;
+    margin: 0;
     padding: 1rem;
     font-size: 1.5rem;
 }

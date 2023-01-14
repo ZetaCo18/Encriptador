@@ -22,21 +22,3 @@ function copiar(){
     texto.setSelectionRange(0,99999);
     document.execCommand('copy')
 }
-
-// FUNCION REMPLAZAR
-
-let cadena = ['a','e','i','o','u'];
-let cadena2 = ['ai','enter','imes','ober', 'ufat'];
-
-function remplazarTexto(){
-    document.getElementById('texto1').value;
-}
-
-
-// RESTRINGIR CARACTERES
-
-function restringirCaracteres(){
-    let caracteres =  (document.getElementById('texto1').value){
-        
-    }
-}
