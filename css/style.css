@@ -233,7 +233,7 @@ body{
     font-family: var(--fuentePrincipal);
     color: var(--grisclaro);
     margin: 0 auto;
-    width: 90%;
+    width: %;
 }
 @media (min-width: 1024px) { 
     .textarea2{
@@ -248,9 +248,7 @@ body{
     border: 1px solid var(--azul);
     margin: 0 auto;
 }
-.footer{
 
-}
 .footer__texto{
     font-family: var(--fuentePrincipal);
     background-color: var(--azul);
