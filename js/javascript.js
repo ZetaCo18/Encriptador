@@ -1,9 +1,10 @@
-// FUNCION COPIAR 
-function copiar() {
-    let textoEncriptado = addEventListener("#btn-copiar").value;
-    navigator.clipboard.writeText(textoEncriptado);
-    alert("Mensaje copiado a su portapapeles!");
-  }
+// FUNCION COPIAR
+document.querySelector('#btn-copiar').addEventListener('click', function(){
+    let copiarTexto = document.querySelector('#texto2').value;
+    navigator.clipboard.writeText(copiarTexto).then(()=>{
+        
+    });
+});
 
 // FUNCION ENCRIPTAR 
 function encriptar(){
@@ -14,8 +15,9 @@ function encriptar(){
 
 }
 
-let boton1 = document.querySelector("#btn-encriptar"); boton1.onclick = encriptar; 
+let boton1 = document.querySelector("#btn-encriptar");  
 
+// FUNCION DESENCRIPTAR
 function desencriptar(){
     let texto = document.querySelector("#texto1").value;
     let textoCifrado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
@@ -24,22 +26,37 @@ function desencriptar(){
 
 }
 
-let boton2 = document.querySelector("#btn-desencriptar"); boton2.onclick = desencriptar;
+let boton2 = document.querySelector('#btn-desencriptar'); 
 
-// function encriptarTexto(){
-//     // manda el texto al box #2 
-//     let texto1 = document.getElementById('texto1').value;
-//     document.getElementById("texto2").value=texto1;
-//     // oculta el elemento 
-//     document.getElementById('ocultarId').style.display = 'none';
-//     //mostrar textArea Derecho
-//     document.getElementById('texto2').style.display = 'block';
-//     //mostar boton
-//     document.getElementById('btnMostrar').style.display = 'block';
-// }
-// function desencriptarTexto(){
-//     // manda el texto al box # 1 
-//     let texto2 = document.getElementById('texto2').value;
-//     document.getElementById("texto1").value=texto2;
-// }
+// FUNCION OCULTAR Y MOSTRAR INFO DERECHA
+document.querySelector('#btn-encriptar').addEventListener('click', function(){
+    document.querySelector('.formulario__derecha-img').style.display = 'none';
+    document.querySelector('.formulario__info').style.display = 'none';
+    document.querySelector('.formulario__lleno').style.display = 'block';
+});
 
+// VALIDADOR IZQUIERDA
+document.querySelector('#btn-encriptar').addEventListener('click', function validadorIzquierda(){
+    let validador1 = document.querySelector('#texto1');
+    if(/^[a-z\s]+$/.test(validador1.value)){
+        encriptar();
+    }else{
+        alert("Esta Ingresando Caracteres Invalidantes");      
+    }
+});
+
+//VALIDADOR DERECHA
+document.querySelector('#btn-encriptar').addEventListener('click', function validadorDerecha(){
+    let validador2 = document.querySelector('#texto2');
+    if(/^[a-z\s]+$/.test(validador2.value)){
+        encriptar();
+    }else{
+        alert("Esta Ingresando Caracteres Invalidantes");          
+    }
+});
+
+
+
+// CALLERS
+boton1.onclick = encriptar;
+boton2.onclick = desencriptar;
