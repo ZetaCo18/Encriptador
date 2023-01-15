@@ -185,7 +185,7 @@ html{
 }
 
 .formulario__derecha-img{
-    display: none;
+    display: block;
 }
 @media (min-width: 1024px) { 
     .formulario__derecha-img{
@@ -221,7 +221,7 @@ html{
     margin: 0 auto;
 }
 .textarea2{
-    display: none;
+    display: block;
     resize: none;
     outline: none;
     border: none;
@@ -237,13 +237,13 @@ html{
     }
 }
 .btn3{
-    display: none;
+    display: block;
     width: 80%;
     color: var(--azul);
     border: 1px solid var(--azul);
     margin: 0 auto;
 }
-.Restriccion{
+.restriccion{
     display: none;
     color: var(--blanco);
     background: var(--rojo);

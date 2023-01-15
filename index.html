@@ -14,7 +14,7 @@
     
     <form class="formulario__encriptador">
         <div class="formulario__encriptador-izquierda">
-            <textarea id="texto1" class="formulario__izquierda" placeholder="Ingrese Su texto Aquí"></textarea>
+            <textarea name="texto1" id="texto1" class="formulario__izquierda" placeholder="Ingrese Su texto Aquí" required="" pattern="[a-z]"></textarea>
             <p class="restriccion">Error Solo Letras Minusculas y sin Acentos</p>
             <div class="formulario__advertencia">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,23 +31,24 @@
             </div>
 
             <div class="formulario__botones">
-                <a onclick="encriptarTexto();" class="botones btn1" href="#">Encriptar</a>
-                <a onclick="desencriptarTexto();" class="botones btn2" href="#">Desecnriptar</a>
+                <!-- <a onclick="encriptarTexto();" class="botones btn1" href="#">Encriptar</a> -->
+                <input class="botones btn1" type="button" value="Encriptar" id="btn-encriptar">
+                <input class="botones btn2" type="button" value="Desencriptar" id="btn-desencriptar">
             </div>
 
         </div>
         <div class="formulario__encriptador-derecha">
-            <div class="formulario__derecha">
+            <!-- <div class="formulario__derecha">
                 <div id="ocultarId" class="formulario__contenido">
                     <img class="formulario__derecha-img" src="/img/Muñeco.png" alt="img muñeco">
                     <div class="formulario__info">
                         <h3 class="formulario__h3">Ningun Mensaje Fue Encontrado</h3>
                         <p class="formulario__p">Ingrese el texto que desees encriptar o desencriptar</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="formulario__lleno">
                     <textarea class="textarea2" id="texto2"></textarea>
-                    <a onclick="copiar();" id="btnMostrar" class="botones btn3" href="#">Copiar</a>
+                    <input onclick="copiar();" class="botones btn3" type="button" value="Copiar" id="btn-copiar">
                 </div>
             </div>
         </div>
